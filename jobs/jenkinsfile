@@ -1,0 +1,18 @@
+pipeline{
+    agent{
+        label "CI"
+    }
+
+    environment {
+         APP_VERION = "1.0"
+    }
+    stages{
+        stage("stage 1"){
+            steps{
+                sh 'env'
+            }
+        }
+    }
+}
+
+            
