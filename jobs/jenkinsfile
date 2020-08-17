@@ -21,25 +21,25 @@ pipeline{
       SSH = credentials('SSH-CENTOS')
     }
 
-    tools {
-        maven 'MVN' 
-    }
+//    tools {
+  //      maven 'MVN' 
+    //}
 
-    stages{
-        stage("Stage 1"){
-            environment {
-                APP_VERSION = "2.0"
-            }
-            steps{
-                sh 'env'
-            }
-        }
+    // stages{
+       // stage("Stage 1"){
+         //   environment {
+           //     APP_VERSION = "2.0"
+            // }
+            // steps{
+               // sh 'env'
+           // }
+       // }
 
-        stage('Maven Version') {
-            steps {
-                sh 'mvn --version'
-            }
-        }
+       // stage('Maven Version') {
+         //   steps {
+           //     sh 'mvn --version'
+          //  }
+       // }
 
         stage('Input') {
             input {
