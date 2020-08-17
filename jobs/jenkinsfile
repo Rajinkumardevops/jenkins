@@ -21,7 +21,7 @@ pipeline{
       SSH = credentials('SSH-CENTOS')
     }
 
-//    tools {
+   // tools {
   //      maven 'MVN' 
     //}
 
@@ -55,5 +55,5 @@ pipeline{
             }
         }
     }
-
+}
         
